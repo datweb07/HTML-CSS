@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Đơn gia nhập hội fan cuồng đội tuyển bóng đá Việt Nam</h1>
+    <p>Chào mừng bạn đến hội của những trái tim đỏ rực, hết mình vì bóng đá</p>
+    <!-- thuộc tính size cho phép điều chỉnh số ký tự có trong một input -->
+    <form action="">
+      <!-- Fullname -->
+      <label for="fullname">Họ và tên (yêu cầu nhập đầy đủ):</label>
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        required
+        placeholder="VD: Nguyễn Văn A"
+        size="30"
+      />
+
+      <br /><br />
+
+      <!-- Email -->
+      <label for="email">Email (yêu cầu nhập đầy đủ):</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="VD: vannguyen@gmail.com"
+        size="30"
+      />
+
+      <br /><br />
+
+      <label for="story">Mô tả cảm xúc khi VN ghi bàn:</label>
+      <br />
+      <textarea
+        name="story"
+        id="story"
+        placeholder="Hãy chia sẻ cảm xúc của bạn..."
+        rows="5"
+        cols="50"
+        spellcheck
+      ></textarea>
+
+      <br /><br />
+      <!-- Giới tính -->
+      <fieldset>
+        <legend>Giới tính của bạn</legend>
+        <label for="male"
+          >Nam
+          <input type="radio" name="gender" id="male" value="male" />
+        </label>
+
+        <br />
+
+        <label for="female"
+          >Nữ
+          <input type="radio" name="gender" id="female" value="female" />
+        </label>
+
+        <br />
+
+        <label for="other"
+          >Khác
+          <input type="radio" name="gender" id="other" value="other" />
+        </label>
+      </fieldset>
+
+      <br /><br />
+
+      <!-- Vị trí đá yêu thích -->
+
+      <label for="position">Bạn thích chơi vị trí nào trên sân bóng</label>
+      <select name="position" id="position">
+        <option value="">--Chọn vị trí--</option>
+        <option value="forward">Tiền đạo</option>
+        <option value="midfielder">Tiền vệ</option>
+        <option value="defender">Hậu vệ</option>
+        <option value="goalkeeper">Thủ môn</option>
+      </select>
+      <br /><br />
+
+      <!-- Mức độ fan cuồng -->
+      <!-- thuộc tính step cho phép tạo khoảng cách giữa các số -->
+      <label for="level">Mức độ cuồng nhiệt của bạn: </label>
+      <input type="number" name="level" id="level" min="1" max="10" step="2" />
+
+      <br /><br />
+
+      <!-- Cầu thủ yêu thích -->
+      <!-- Sử dụng datalist để gợi ý cầu thủ -->
+      <label for="favorite-player">Lựa chọn cầu thủ yêu thích của bạn: </label>
+      <input
+        type="text"
+        name="favorite-player"
+        id="favorite-player"
+        list="player-list"
+      />
+
+      <datalist id="player-list">
+        <option value="Đặng Văn Lâm"></option>
+        <option value="Trần Đình Trọng"></option>
+        <option value="Nguyễn Quang Hải"></option>
+        <option value="Phan Văn Đức"></option>
+        <option value="Nguyễn Tiến Linh"></option>
+        <option value="Nguyễn Công Phượng"></option>
+      </datalist>
+      <br /><br />
+
+      <!-- Cam kết -->
+      <p><b>Bạn có cam kết không rời đội bóng khi đội bóng sa sút không?</b></p>
+      <label for="agree"
+        >Tôi cam kết <input type="checkbox" name="agree" id="agree"
+      /></label>
+
+      <!-- Nút gửi và reset -->
+      <br /><br />
+      <button type="submit">Gửi đơn</button>
+      <button type="reset">Nhập lại</button>
+    </form>
+  </body>
+</html>

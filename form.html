@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- phân biệt name: dùng để đặt tên cho các trường dữ liệu, id: xác định vị trí các trường dữ liệu -->
+    <form action="login">
+      <label for="name">Họ và tên:</label>
+      <br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Please enter your name"
+      />
+
+      <br />
+      <br />
+
+      <label for="password">Mật khẩu:</label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        placeholder="Please enter your password"
+      />
+      <label for="remember-password">
+        <input
+          type="checkbox"
+          name="remember-password"
+          id="remember-password"
+          checked
+        />
+        Ghi nhớ đăng nhập
+      </label>
+      <br /><br />
+
+      <button type="submit">Đăng nhập</button>
+    </form>
+  </body>
+</html>
