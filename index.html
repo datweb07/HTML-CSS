@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- heading tag -->
+    <h1>xin chào mọi người</h1>
+    <h2>chào mừng mọi người đến với trang web của tôi</h2>
+    <!-- paragraph tag -->
+    <p>
+      Xin chào mọi người, <b>tôi tên là Đạt</b>, hiện tại đang là sinh viên năm
+      hai <u><b> ngành IT </b></u> tại <i>UEH</i>.
+    </p>
+
+    <h1>Giới Thiệu Về Các Bé Baby Three</h1>
+    <h2>Đồ chơi blind-box đang làm mưa làm gió trên thị trường</h2>
+    <p>
+      Baby Three là dòng đồ chơi mô hình blind-box siêu dễ thương và độc đáo,
+      được thiết kế để thu hút các tín đồ mê phong cách kawaii (dễ thương). Dòng
+      sản phẩm này nổi bật với các chủ đề sáng tạo như
+      <b>Fairy Tale Adventure</b> hay <b>Romantic Ocean Series</b>, mỗi mô hình
+      đều được thiết kế với trang phục đáng yêu và câu chuyện thú vị. Điều này
+      khiến Baby Three rất được lòng các nhà sưu tầm, đặc biệt trong các dịp lễ
+      hay sự kiện unboxing.
+    </p>
+    <p>
+      Thương hiệu này cũng ra mắt nhiều bộ sưu tập theo chủ đề như
+      <b>12 cung hoàng đạo</b>, hay các phiên bản đặc biệt dành cho dịp lễ hội.
+      Điểm hấp dẫn của Baby Three là yếu tố bất ngờ, vì bạn không biết được mình
+      sẽ nhận được nhân vật nào khi mở hộp. Ngoài ra, mỗi bộ còn có các mô hình
+      phiên bản hiếm, khiến dân sưu tầm phát cuồng
+    </p>
+
+    <!-- anchor link tag -->
+    <!-- thuộc tính title: tạo tool tips -->
+    <a
+      href="http://thptdongphu.edu.vn/"
+      title="Trường THPT Đồng Phú"
+      target="_blank"
+      rel="noopener noreferrer"
+      >THPT Đồng Phú</a
+    >
+
+    <a href="./assets/babythree1.jpg" download="babythree.png">Tải hình ảnh</a>
+    <img
+      src="./assets/babythree1.jpg"
+      alt="Hình ảnh Baby Three"
+      height="20%"
+      width="20%"
+    />
+
+    <!-- truyền trực tiếp đường dẫn video -->
+    <video
+      src="./assets/video.mp4"
+      type="video/mp4"
+      controls
+      height="200px"
+    ></video>
+
+    <!-- không truyền trực tiếp mà sử dụng các thẻ con source, hỗ trợ nhiều định dạng -->
+    <!-- hiển thị ảnh đại diện (thumbnail) trước khi bấm play -->
+    <video poster="./assets/video-poster.jpg" controls height="200px">
+      <source src="./assets/video.mp4" type="video/mp4" />
+      <source src="./assets/video.webm" type="video/webm" />
+      Trình duyệt của bạn không hỗ trợ thẻ video.
+    </video>
+
+    <audio controls>
+      <source src="./assets/audio.mp3" type="audio/mp3" />
+      <source src="./assets/audio.ogg" type="audio/ogg" />
+      Trình duyệt của bạn không hỗ trợ thẻ audio.
+    </audio>
+  </body>
+</html>
